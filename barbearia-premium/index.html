@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Barbearia Premium — Estilo e Tradição</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome (ícones) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Elegant Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Favicon -->
+  <link rel="icon" href="https://static.cdnlogo.com/logos/b/24/barbershop2.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="https://static.cdnlogo.com/logos/b/24/barbershop2.svg">
+  <link rel="apple-touch-icon" href="https://static.cdnlogo.com/logos/b/24/barbershop2.svg">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#hero">
+      <img src="https://static.cdnlogo.com/logos/b/24/barbershop2.svg" alt="Barbearia Premium" class="logo-navbar">
+      <span class="ms-2 brand-name">BARBEARIA</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link custom-link" href="#sobre">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-link" href="#servicos">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-link" href="#galeria">Galeria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-link" href="#contato">Contato</a>
+        </li>
+        <li class="nav-item ms-lg-3">
+          <button type="button" class="btn btn-success btn-agendar" data-bs-toggle="modal" data-bs-target="#bookingModal">
+            <i class="fab fa-whatsapp"></i> Agendar
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<header id="hero" class="hero-section text-center text-white d-flex align-items-center">
+  <div class="hero-bg" id="heroBg">
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?fm=jpg&q=80&w=1600')"></div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?fm=jpg&q=80&w=1600')"></div>
+    <div class="slide" style="background-image:url('https://wallpapers.com/images/hd/barber-shop-background-osvvao88if7y14od.jpg')"></div>
+  </div>
+
+  <div class="container position-relative">
+    <div class="hero-content">
+      <h1 class="hero-title">ESTILO • TRADIÇÃO • QUALIDADE</h1>
+      <p class="hero-subtitle">Experiência premium em cada detalhe</p>
+      <a href="https://wa.me/5519988887777" class="btn btn-success btn-hero mt-4">
+        <i class="fab fa-whatsapp me-2"></i>Agende Agora
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT SECTION -->
+<section id="sobre" class="py-section about-section bg-white">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <img src="https://www.professionalbarber.shop/wp-content/uploads/2023/08/shutterstock_608094002-1.png" alt="Sobre" class="img-fluid rounded about-image">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="section-title">Nossa História</h2>
+        <p class="about-text">
+          A Barbearia Premium foi criada com um único propósito: oferecer a melhor experiência em cuidados masculinos. Desde 2015, nos dedicamos a resgatar a tradição das grandes barbearias do século XX, combinando técnicas clássicas com conforto e modernidade.
+        </p>
+        <p class="about-text">
+          Nossos profissionais são altamente treinados em cortes, barboterapia e visagismo facial. Cada cliente recebe um atendimento personalizado em um ambiente acolhedor e sofisticado, refletindo nossa paixão por excelência.
+        </p>
+        <div class="about-values mt-4">
+          <div class="value-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Profissionais Experientes</span>
+          </div>
+          <div class="value-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Produtos Premium Importados</span>
+          </div>
+          <div class="value-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Ambiente Acolhedor</span>
+          </div>
+          <div class="value-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Atendimento Personalizado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="servicos" class="py-section services-section">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Nossos Serviços</h2>
+    
+    <div class="row g-4">
+      <!-- Serviço 1 (aparar barba) -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <div class="service-icon-box">
+            <img src="https://cdn-icons-png.flaticon.com/128/6019/6019017.png" alt="Barba" class="service-icon">
+          </div>
+          <h4 class="service-title">Aparar Barba</h4>
+          <p class="service-description">
+            Corte, modelagem e acabamento da barba com navalha ou máquina. Hidratação leve e finalização com balm.
+          </p>
+          <div class="service-price">R$ 50,00</div>
+          <button class="btn btn-outline-success btn-sm w-100" onclick="agendarServico('Aparar Barba')">Agendar</button>
+        </div>
+      </div>
+
+      <!-- Serviço 2 (em destaque) -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card featured">
+          <div class="service-icon-box">
+            <img src="https://cdn-icons-png.flaticon.com/128/393/393249.png" alt="Corte" class="service-icon">
+          </div>
+          <h4 class="service-title">Corte Masculino</h4>
+          <p class="service-description">
+            Cortes clássicos, degradê moderno, com técnicas de tesoura e máquina. Atendimento completo com assepsia e conforto.
+          </p>
+          <div class="service-price">R$ 65,00</div>
+          <button class="btn btn-success btn-sm w-100" onclick="agendarServico('Corte Masculino')">Agendar</button>
+        </div>
+      </div>
+
+      <!-- Serviço 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <div class="service-icon-box">
+            <img src="https://cdn-icons-png.flaticon.com/128/2241/2241647.png" alt="Combo" class="service-icon">
+          </div>
+          <h4 class="service-title">Corte + Barba</h4>
+          <p class="service-description">
+            O combo perfeito! Corte completo + barba premium com barboterapia. Transformação total do visual.
+          </p>
+          <div class="service-price">R$ 130,00</div>
+          <button class="btn btn-outline-success btn-sm w-100" onclick="agendarServico('Corte + Barba')">Agendar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section id="depoimentos" class="py-section testimonials-section bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">O Que Nossos Clientes Dizem</h2>
+
+    <div class="testimonial-wrapper">
+      <button id="testPrev" class="testimonial-nav testimonial-prev" aria-label="Anterior">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <div class="testimonial-viewport">
+        <div class="testimonial-slider" id="testimonialSlider">
+          <!-- Depoimento 1 -->
+          <div class="testimonial-item">
+            <div class="testimonial-card">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQta2hfzIQqR5KBaVIMFydNtF0fPAx0zNDJhQ&s" alt="Rafael" class="testimonial-photo">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">"Melhor barbearia que já fui! O profissionalismo e atenção ao detalhe é incrível. Voltarei sempre!"</p>
+              <h5 class="testimonial-author">Rafael Silva</h5>
+            </div>
+          </div>
+
+          <!-- Depoimento 2 -->
+          <div class="testimonial-item">
+            <div class="testimonial-card">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUqYdcAi0n8GVLDR6J7-RqBG74a24y_ysDug&s" alt="Gustavo" class="testimonial-photo">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">"Que experiência extraordinária! Ambiente lindo, profissionais competentes e atendimento top."</p>
+              <h5 class="testimonial-author">Gustavo Costa</h5>
+            </div>
+          </div>
+
+          <!-- Depoimento 3 -->
+          <div class="testimonial-item">
+            <div class="testimonial-card">
+              <img src="https://s2-g1.glbimg.com/d6zRNnkL1SzJj5NmUVnOtd2MXu0=/0x0:1233x1467/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/n/U/LmxBXBTSexQOGKwkEHDA/zemanoelinstagram.jpg" alt="Felipe" class="testimonial-photo">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">"Recomendo muito! Meu corte ficou perfeito, exatamente como pedi. Profissional e atencioso!"</p>
+              <h5 class="testimonial-author">Felipe Martins</h5>
+            </div>
+          </div>
+
+          <!-- Depoimento 4 -->
+          <div class="testimonial-item">
+            <div class="testimonial-card">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT89oLOeWK_a1IaMVSd3A0HJJIDJfww1yXWvw&s" alt="Lucas" class="testimonial-photo">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">"Lugar impecável! Voltei depois de anos e continua sendo a melhor da região. Muito bom!"</p>
+              <h5 class="testimonial-author">Lucas Oliveira</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button id="testNext" class="testimonial-nav testimonial-next" aria-label="Próximo">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY SECTION -->
+<section id="galeria" class="py-section gallery-section bg-white">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Nosso Espaço</h2>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="gallery-item">
+          <img src="https://glueloyalty.com/wp-content/uploads/2022/04/Social-Media-Marketing-Ideas-for-Barbershop.jpg" alt="Galeria 1" class="gallery-image">
+          <div class="gallery-overlay">
+            <span class="gallery-title">Ambiente</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="gallery-item">
+          <img src="https://blog.dachtoalhas.com.br/wp-content/uploads/2020/10/conquistar-cliente-salao-barbearia.jpg" alt="Galeria 2" class="gallery-image">
+          <div class="gallery-overlay">
+            <span class="gallery-title">Atendimento</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="gallery-item">
+          <img src="https://img.freepik.com/fotos-gratis/homem-bonito-a-cortar-a-barba-num-barbeiro_1303-20970.jpg" alt="Galeria 3" class="gallery-image">
+          <div class="gallery-overlay">
+            <span class="gallery-title">Profissionalismo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contato" class="py-section contact-section bg-dark text-white">
+  <div class="container">
+    <h2 class="section-title text-white text-center mb-5">Entre em Contato</h2>
+
+    <div class="row g-5">
+      <!-- Informações de Contato -->
+      <div class="col-lg-6">
+        <div class="contact-info">
+          <h4 class="contact-subtitle">Localização</h4>
+          <p class="contact-text mb-4">
+            <i class="fas fa-map-marker-alt me-3 text-success"></i>
+            <strong>Rua Exemplo, 123</strong><br>
+            <span class="ms-5">Centro — Sua Cidade, SP</span>
+          </p>
+
+          <h4 class="contact-subtitle mt-4">Telefone & WhatsApp</h4>
+          <p class="contact-text mb-4">
+            <i class="fas fa-phone me-3 text-success"></i>
+            <a href="tel:+5519988887777" class="text-white text-decoration-none">+55 (19) 98888-7777</a>
+          </p>
+
+          <h4 class="contact-subtitle mt-4">Redes Sociais</h4>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" class="social-link">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://wa.me/5519988887777" target="_blank" class="social-link">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Horários -->
+      <div class="col-lg-6">
+        <div class="contact-info">
+          <h4 class="contact-subtitle">Horário de Funcionamento</h4>
+          <div class="hours-box">
+            <div class="hour-item">
+              <span class="day-name">Segunda</span>
+              <span class="day-time">13:00 - 18:00</span>
+            </div>
+            <div class="hour-item">
+              <span class="day-name">Terça</span>
+              <span class="day-time">09:30 - 19:00</span>
+            </div>
+            <div class="hour-item">
+              <span class="day-name">Quarta</span>
+              <span class="day-time">09:30 - 19:00</span>
+            </div>
+            <div class="hour-item">
+              <span class="day-name">Quinta</span>
+              <span class="day-time">09:30 - 19:00</span>
+            </div>
+            <div class="hour-item">
+              <span class="day-name">Sexta</span>
+              <span class="day-time">09:30 - 19:00</span>
+            </div>
+            <div class="hour-item">
+              <span class="day-name">Sábado</span>
+              <span class="day-time">08:30 - 18:00</span>
+            </div>
+            <div class="hour-item closed">
+              <span class="day-name">Domingo</span>
+              <span class="day-time">Fechado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer bg-black text-white-50">
+  <div class="footer-content">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <img src="https://static.cdnlogo.com/logos/b/24/barbershop2.svg" alt="Logo" class="footer-logo mb-3">
+          <p class="footer-text">
+            Barbearia Premium — Onde tradição encontra modernidade. Estilo, conforto e profissionalismo em cada corte.
+          </p>
+        </div>
+
+        <div class="col-lg-4">
+          <h5 class="footer-title">Links Rápidos</h5>
+          <ul class="footer-links list-unstyled">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h5 class="footer-title">Contato Rápido</h5>
+          <p class="footer-contact">
+            <i class="fas fa-phone me-2 text-success"></i>
+            <a href="tel:+5519988887777">+55 (19) 98888-7777</a>
+          </p>
+          <p class="footer-contact">
+            <i class="fas fa-map-marker-alt me-2 text-success"></i>
+            Rua Exemplo, 123 — Sua Cidade, SP
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom border-top border-secondary">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start small">
+          © 2026 Barbearia Premium. Todos os direitos reservados.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="https://instagram.com" class="text-white-50 me-3"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com" class="text-white-50 me-3"><i class="fab fa-facebook"></i></a>
+          <a href="https://wa.me/5519988887777" class="text-white-50"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/5519988887777" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- BOOKING MODAL -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content booking-modal">
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold">Agendar Atendimento</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <form id="bookingForm">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label fw-bold">Nome Completo</label>
+            <input type="text" class="form-control form-control-lg" name="name" placeholder="Seu nome" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label fw-bold">Telefone</label>
+            <input type="tel" class="form-control form-control-lg" name="phone" placeholder="(19) 98888-7777" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label fw-bold">Serviço Desejado</label>
+            <select class="form-select form-select-lg" name="service" required>
+              <option value="">Escolha um serviço</option>
+              <option value="Corte Masculino - R$ 65">Corte Masculino - R$ 65,00</option>
+              <option value="Barba Premium - R$ 80">Barba Premium - R$ 80,00</option>
+              <option value="Corte + Barba - R$ 130">Corte + Barba - R$ 130,00</option>
+            </select>
+          </div>
+          <div class="form-text text-muted">
+            Após enviar, você será redirecionado para o WhatsApp para confirmar seu agendamento.
+          </div>
+        </div>
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-success btn-lg">
+            <i class="fab fa-whatsapp me-2"></i>Enviar via WhatsApp
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+<script>
+  // Função para agendar serviço
+  function agendarServico(servico) {
+    const modal = new bootstrap.Modal(document.getElementById('bookingModal'));
+    document.querySelector('select[name="service"]').value = servico;
+    modal.show();
+  }
+
+  // Form submission
+  document.getElementById('bookingForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.querySelector('input[name="name"]').value;
+    const phone = document.querySelector('input[name="phone"]').value;
+    const service = document.querySelector('select[name="service"]').value;
+    
+    const message = `Olá! Gostaria de agendar um atendimento.\n\nNome: ${name}\nServiço: ${service}\nTelefone: ${phone}`;
+    const whatsappUrl = `https://wa.me/5519988887777?text=${encodeURIComponent(message)}`;
+    
+    window.open(whatsappUrl, '_blank');
+    bootstrap.Modal.getInstance(document.getElementById('bookingModal')).hide();
+  });
+</script>
+</body>
+</html>
